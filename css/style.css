@@ -87,14 +87,16 @@ main {
 .home-content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0 8%;
-  gap: 2rem;
+  gap: 5rem;
   flex: 1;
 }
 
 .content-text {
   flex: 2.5;
+  border-left: 2px solid white;
+  padding: 1rem 1.5rem;
 }
 
 .content-text h1 {
@@ -115,10 +117,14 @@ main {
   font-weight: 600;
 }
 
-.content-img {
+.content-side {
   position: relative;
   flex: 1.5;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  order: 1;
 }
 .content-img img {
   object-fit: cover;
@@ -135,12 +141,9 @@ main {
 }
 
 .sosmed {
-  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  right: 0;
-  padding: 1.5rem 2rem;
 }
 .sosmed a {
   font-size: 1.5rem;
@@ -148,3 +151,30 @@ main {
 }
 
 /* main */
+
+/* footer */
+
+/* footer */
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  #home {
+    background-image: url(../assets/home-foto.jpg);
+  }
+
+  .content-img img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+/* responsive */
