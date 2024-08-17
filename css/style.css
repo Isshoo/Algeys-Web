@@ -29,8 +29,9 @@ header {
   z-index: 9999;
   background-color: transparent;
   backdrop-filter: blur(15px);
-  top: -10px;
-  padding: 1.5rem 8%;
+  top: 0;
+  height: 4rem;
+  padding: 0 8%;
   max-width: 2045px;
   border-radius: 0 0 10px 10px;
 }
@@ -340,19 +341,19 @@ main {
 
 @media screen and (max-width: 768px) {
   .nav-list {
-    gap: 3rem;
+    gap: 2rem;
     flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 4.3rem;
     width: 40%;
-    min-height: 100vh;
+    height: 40vh;
     justify-content: flex-start;
     align-items: center;
     right: -1000px;
-    background-color: #4443424f;
+    background-color: #3b3b3b85;
     backdrop-filter: blur(15px);
-    border-radius: 20px;
-    padding-top: 8rem;
+    border-radius: 20px 0 20px 0;
+    padding-block: 2rem;
     z-index: 90;
     transition: right 0.5s ease-in-out;
   }
@@ -363,7 +364,7 @@ main {
   }
 
   .nav-list.active {
-    right: -10px;
+    right: 0.3rem;
   }
 
   .content-text {
