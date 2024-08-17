@@ -28,9 +28,11 @@ header {
   position: fixed;
   z-index: 9999;
   background-color: transparent;
-  top: 0;
+  backdrop-filter: blur(15px);
+  top: -10px;
   padding: 1.5rem 8%;
-  max-width: 1440px;
+  max-width: 2045px;
+  border-radius: 0 0 10px 10px;
 }
 
 .nav-title {
@@ -44,6 +46,7 @@ header {
   font-weight: 600;
   text-decoration: none;
   color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 }
 .nav-title a span {
   color: #ffd000;
@@ -86,6 +89,8 @@ header {
 
   border-radius: 30px;
   position: relative;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 
 .nav-link::after {
@@ -96,7 +101,7 @@ header {
   width: 0;
   transition: width 0.3s ease;
   position: absolute;
-  top: 100%;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   animation: fade-in-out 2s infinite;
@@ -113,6 +118,8 @@ header {
 .nav-toggle {
   display: none;
   cursor: pointer;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 
 .nav-toggle span {
@@ -167,9 +174,9 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
+  width: 100%;
+  max-width: 2045px;
   gap: 5rem;
-
-  max-width: 1440px;
 }
 
 .content-text {
@@ -186,7 +193,7 @@ main {
   transition: height 0.3s ease;
   position: absolute;
   top: 50%;
-  left: -2rem;
+  left: -1.5rem;
   transform: translateY(-50%);
   animation: fade-in-out 2s infinite;
 }
@@ -199,12 +206,16 @@ main {
   font-size: 2rem;
   font-style: italic;
   font-weight: 600;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 
 .content-text h1 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-block-end: 1rem;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 .content-text h1 span {
   color: #ffd000;
@@ -213,6 +224,7 @@ main {
 .content-text h3 {
   font-size: 1.5rem;
 
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
   margin-block-end: 0.5rem;
 }
 
@@ -223,12 +235,13 @@ main {
 .content-text p {
   font-size: 1.5rem;
   font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 
   margin-block-end: 1rem;
 }
 
 .content-text .aboutBtn {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -239,6 +252,8 @@ main {
   transition: 0.3s ease-in-out;
   align-items: center;
   cursor: pointer;
+
+  box-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 }
 .content-text .aboutBtn i {
   margin-inline-start: 0.5rem;
@@ -248,6 +263,14 @@ main {
   background-color: #2a2929;
   transition: 0.3s ease-in-out;
   color: #ffd000;
+}
+
+.home-content aside {
+  flex: 1.5;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .content-img img {
@@ -277,6 +300,8 @@ main {
   color: white;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 }
 
 .sosmed a:hover {
@@ -293,7 +318,7 @@ main {
 
 /* responsive */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
   #home {
     background-image: url(../assets/home-foto.jpg);
   }
@@ -301,9 +326,7 @@ main {
   .home-content {
     flex-direction: column;
     align-items: flex-start;
-    justify-items: flex-start;
-    flex-wrap: nowrap;
-    row-gap: 1rem;
+    row-gap: 0.1rem;
   }
 
   .sosmed {
@@ -330,6 +353,8 @@ main {
     backdrop-filter: blur(15px);
     border-radius: 20px;
     padding-top: 8rem;
+    z-index: 90;
+    transition: right 0.5s ease-in-out;
   }
 
   .nav-toggle {
@@ -341,14 +366,8 @@ main {
     right: -10px;
   }
 
-  .home-content {
-    flex-wrap: wrap;
-    row-gap: 1rem;
-    justify-content: flex-end;
-  }
-
-  .content-text h2 {
-    font-size: 1.25rem;
+  .content-text {
+    margin-block-start: 2rem;
   }
 
   .content-text h1 {
@@ -361,11 +380,17 @@ main {
 
   .content-text p {
     font-size: 1rem;
+    margin-block-end: 0.5rem;
   }
 
   .content-text .aboutBtn {
     font-size: 1rem;
     padding: 1.25rem 2rem;
+  }
+
+  .home-content aside {
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .sosmed {
@@ -391,23 +416,26 @@ main {
   }
 
   .content-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .content-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .content-text h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .content-text p {
-    font-size: 1.25rem;
+    font-size: 1rem;
+
+    margin-block-end: 0.5rem;
   }
 
   .content-text .aboutBtn {
     font-size: 1rem;
+    padding: 1.25rem 2rem;
   }
 
   .content-img img {
