@@ -326,7 +326,7 @@ main {
   row-gap: 3rem;
 }
 
-.about-title .article-title span {
+.article-title span {
   color: #ffd000;
 }
 
@@ -337,11 +337,11 @@ main {
 
   width: 100%;
   max-width: 1024px;
-  gap: 5rem;
+  gap: 3rem;
   border-radius: 20px;
   background-color: #44434262;
   padding: 3rem;
-  box-shadow: -5px 5px 10px 3px #fff;
+  box-shadow: -3px 3px 10px 3px #ffb700;
 }
 
 .profil-bio {
@@ -354,7 +354,7 @@ main {
   display: block;
   border-radius: 10px;
   aspect-ratio: 1.35/2;
-  max-width: 15rem;
+  max-width: 17rem;
   transition: transform 0.5s ease-in-out;
 }
 .profil-bio img:hover {
@@ -367,13 +367,13 @@ main {
   border-collapse: collapse;
   padding: 2rem;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   td {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 
