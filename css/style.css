@@ -13,27 +13,45 @@ body {
   /* height: 2000px; */
 }
 
+/* tamplate */
+.container {
+  max-width: 1024px;
+  margin-inline: 8%;
+}
+/* tamplate */
+
 /* navbar */
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  top: 0;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s ease-in-out;
 }
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-  background-color: transparent;
-  backdrop-filter: blur(15px);
-  top: 0;
+
   height: 4rem;
-  padding-inline: 8%;
-  max-width: 1300px;
-  border-radius: 0 0 10px 10px;
+  margin-inline: auto;
+  max-width: 1024px;
+  align-self: center;
 }
 
 .nav-title {
@@ -153,7 +171,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding-inline: 8%;
+  width: 100%;
 }
 
 #home::after {
@@ -175,8 +193,9 @@ main {
 .home-content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
+  margin-inline: 8%;
   max-width: 1024px;
   gap: 5rem;
 }
@@ -272,7 +291,7 @@ main {
   display: flex;
   gap: 3rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .content-img img {
@@ -322,7 +341,8 @@ main {
   min-height: 100vh;
   justify-content: center;
   flex-direction: column;
-  padding-inline: 8%;
+  position: relative;
+  width: 100%;
   row-gap: 3rem;
 }
 
@@ -335,13 +355,13 @@ main {
   align-items: center;
   justify-content: space-evenly;
 
-  width: 100%;
   max-width: 1024px;
   gap: 3rem;
   border-radius: 20px;
   background-color: transparent;
   padding: 3rem;
   box-shadow: -3px 3px 10px 3px #ffd000;
+  margin-inline: 8%;
 }
 
 .profil-bio {
@@ -354,7 +374,7 @@ main {
   display: block;
   border-radius: 10px;
   aspect-ratio: 1.35/2;
-  max-width: 17rem;
+  max-width: 18rem;
   transition: transform 0.5s ease-in-out;
 }
 .profil-bio img:hover {
@@ -374,7 +394,7 @@ main {
 }
 
 .biodata p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-align: justify;
   text-indent: 2rem;
   line-height: 1.5rem;
@@ -387,7 +407,7 @@ main {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 400;
 
   tr {
@@ -419,6 +439,30 @@ main {
 
 /* about */
 
+/* education */
+
+#education {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  row-gap: 3rem;
+  width: 100%;
+}
+
+.education-title .article-title span {
+  color: #ffd000;
+}
+
+.education-content {
+  max-width: 1024px;
+  margin-inline: 8%;
+}
+
+/* education */
+
 /* main */
 
 /* footer */
@@ -428,6 +472,9 @@ main {
 /* responsive */
 
 @media screen and (max-width: 1024px) {
+  .navbar {
+    margin-inline: 8%;
+  }
   .nav-list ul {
     gap: 2rem;
   }
@@ -470,26 +517,39 @@ main {
   }
 
   .biodata p {
+    font-size: 0.9rem;
+  }
+  .tabel-bio {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .nav-list {
-    gap: 2rem;
+    gap: 1rem;
     flex-direction: column;
     position: absolute;
-    top: 4.3rem;
 
     justify-content: center;
     align-items: center;
-    right: -1000px;
-    background-color: rgba(44, 44, 44, 0.694);
-    backdrop-filter: blur(15px);
-    border-radius: 20px 0 20px 0;
-    padding: 2rem 3rem;
+    top: -1000px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0 0 20px 20px;
+    padding: 1rem 0;
+    width: 84%;
     z-index: 90;
-    transition: right 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px 0.6px #fff;
+    left: 8%;
+  }
+
+  .nav-link {
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: white;
   }
 
   .nav-toggle {
@@ -498,7 +558,7 @@ main {
   }
 
   .nav-list.active {
-    right: 8%;
+    top: 4.3rem;
   }
 
   .content-text {
@@ -544,18 +604,18 @@ main {
   }
 
   .profil-bio img {
-    max-width: 13rem;
+    max-width: 12rem;
   }
 
   .biodata h3 {
     display: none;
   }
   .biodata p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-top: 1px solid #ffd000;
   }
   .tabel-bio {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -579,14 +639,17 @@ main {
   }
 
   .profil-bio img {
-    max-height: 15rem;
+    max-width: 10rem;
   }
 
   .biodata p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   .tabel-bio {
-    font-size: 0.6rem;
+    font-size: 0.62rem;
+  }
+  .contact-btn span {
+    font-size: 0.7rem;
   }
 }
 
