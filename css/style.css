@@ -31,8 +31,8 @@ header {
   backdrop-filter: blur(15px);
   top: 0;
   height: 4rem;
-  padding: 0 8%;
-  max-width: 2045px;
+  padding-inline: 8%;
+  max-width: 1300px;
   border-radius: 0 0 10px 10px;
 }
 
@@ -138,9 +138,10 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
   overflow: hidden;
 }
+
+/* home */
 
 #home {
   display: flex;
@@ -152,6 +153,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  padding-inline: 8%;
 }
 
 #home::after {
@@ -173,10 +175,9 @@ main {
 .home-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 8%;
+  justify-content: space-evenly;
   width: 100%;
-  max-width: 2045px;
+  max-width: 1024px;
   gap: 5rem;
 }
 
@@ -271,7 +272,7 @@ main {
   display: flex;
   gap: 3rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .content-img img {
@@ -310,6 +311,73 @@ main {
   transform: scale(1.5);
   transition: 0.3s ease-in-out;
 }
+
+/* home */
+
+/* about */
+
+#about-me {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 8%;
+  row-gap: 3rem;
+}
+
+.about-title .article-title span {
+  color: #ffd000;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  max-width: 1024px;
+  gap: 5rem;
+  border-radius: 20px;
+  background-color: #44434262;
+  padding: 3rem;
+  box-shadow: -5px 5px 10px 3px #fff;
+}
+
+.profil-bio {
+  order: -1;
+}
+
+.profil-bio img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+  aspect-ratio: 1.35/2;
+  max-width: 15rem;
+  transition: transform 0.5s ease-in-out;
+}
+.profil-bio img:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease-in-out;
+}
+
+.tabel-bio {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 400;
+  tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  td {
+    padding: 1rem;
+  }
+}
+
+/* about */
 
 /* main */
 
