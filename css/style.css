@@ -693,7 +693,6 @@ main {
   position: relative;
   flex: 1;
   overflow: hidden;
-  cursor: pointer;
   transition: flex-grow 0.5s ease-in-out, filter 0.5s ease-in-out;
   filter: grayscale(80%);
 }
