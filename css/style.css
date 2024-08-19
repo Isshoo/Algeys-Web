@@ -10,13 +10,16 @@ body {
   font-family: Montserrat, sans-serif;
   background-color: #000;
   color: white;
-  /* height: 2000px; */
 }
 
 /* tamplate */
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin-inline: 8%;
+}
+
+.article-title {
+  font-size: 2rem;
 }
 
 /* tamplate */
@@ -51,9 +54,9 @@ header::after {
   justify-content: space-between;
   align-items: center;
 
-  height: 4rem;
+  height: 10vh;
   margin-inline: auto;
-  max-width: 1024px;
+  max-width: 1200px;
   align-self: center;
 }
 
@@ -201,7 +204,7 @@ main {
   justify-content: space-between;
   width: 100%;
   margin-inline: 8%;
-  max-width: 1024px;
+  max-width: 1200px;
   gap: 5rem;
 }
 
@@ -352,9 +355,6 @@ main {
   padding-block: 5rem;
 }
 
-/* .about-title {
-  margin-top: 5rem;
-} */
 .about-title .article-title span {
   color: #ffd000;
 }
@@ -364,7 +364,7 @@ main {
   align-items: center;
   justify-content: space-evenly;
 
-  max-width: 1024px;
+  max-width: 1200px;
   gap: 3rem;
   border-radius: 20px;
   background-color: transparent;
@@ -467,7 +467,7 @@ main {
 }
 
 .education-content {
-  max-width: 1024px;
+  max-width: 1200px;
   margin-inline: 8%;
   display: flex;
   justify-content: space-evenly;
@@ -542,6 +542,10 @@ main {
   text-align: center;
 }
 
+/* education */
+
+/* hobbies */
+
 #hobbies {
   display: flex;
   align-items: center;
@@ -559,7 +563,7 @@ main {
 }
 
 .hobbies-content {
-  max-width: 1024px;
+  max-width: 1200px;
   margin-inline: 8%;
   display: flex;
   justify-content: space-evenly;
@@ -601,7 +605,7 @@ main {
   display: inline;
 }
 
-/* education */
+/* hobbies */
 
 /* main */
 
@@ -610,6 +614,12 @@ main {
 /* footer */
 
 /* responsive */
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    margin-inline: 8%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -756,10 +766,6 @@ main {
   }
   .tabel-bio {
     font-size: 0.8rem;
-  }
-
-  .education-card {
-    max-width: 18rem;
   }
 }
 
