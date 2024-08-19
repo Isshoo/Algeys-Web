@@ -485,7 +485,7 @@ main {
   align-items: center;
   transition: transform 0.5s ease-in-out;
   aspect-ratio: 1.4/2;
-  max-width: 18rem;
+  max-width: 19.3rem;
   overflow: hidden;
   gap: 0.5rem;
 }
@@ -533,6 +533,7 @@ main {
   z-index: 99;
   border: 0.4rem solid black;
   display: inline-block;
+  font-weight: 500;
 }
 
 .education-info h4 {
