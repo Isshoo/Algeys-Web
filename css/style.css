@@ -803,7 +803,7 @@ main {
   }
 
   .hobbies-item:hover {
-    flex: 7;
+    flex: 5;
   }
 
   .hobbies-item h4 {
