@@ -719,16 +719,218 @@ main {
 
 /* hobbies */
 
+/* contact */
+
+#contact {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  row-gap: 3rem;
+  width: 100%;
+  padding-block: 5rem;
+}
+
+#contact::before {
+  content: "";
+  display: block;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.contact-title {
+  width: 100%;
+  background-color: #ffd000;
+  text-align: center;
+  padding-block: 1.5rem;
+  max-width: 1200px;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  max-width: 1200px;
+  gap: 3rem;
+  border-radius: 20px;
+  margin-inline: 8%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.contact-info h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #2a2929;
+  padding-block: 1rem;
+}
+
+.contact-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 45%;
+}
+.contact-menu i {
+  background-color: #ffd000;
+  padding: 0.5rem;
+  aspect-ratio: 1/1;
+}
+
+.menu-detail p {
+  font-size: 0.7rem;
+}
+
+.form-contact {
+  flex: 1;
+}
+
+.form-contact form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem 2rem;
+  background-color: transparent;
+  box-shadow: -2px 2px 10px 3px #2a2929;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex-grow: 1;
+}
+
+.form-title {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-block: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #ffd725;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group input::placeholder {
+  font-family: Montserrat, sans-serif;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-height: 18vh;
+}
+
+.form-group textarea::placeholder {
+  font-family: Montserrat, sans-serif;
+}
+
+.submit-form {
+  padding: 0.5rem 2rem;
+  background-color: #ffffff6f;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.message,
+.form-title {
+  flex-basis: 100%;
+}
+
+.email,
+.phone,
+.name,
+.subject {
+  flex-basis: 40%;
+}
+
+/* contact */
+
 /* main */
 
 /* footer */
+footer {
+  width: 100%;
+
+  background-color: #2a2929;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 3rem;
+  border-radius: 20px;
+  margin-inline: auto;
+  transition: background-color 0.3s ease-in-out;
+  padding-block: 1rem;
+}
+
+.footer-container h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.footer-container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-container .sosmed {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .sosmed a i {
+  font-size: 1.2rem;
+}
 
 /* footer */
 
 /* responsive */
 
 @media screen and (max-width: 1440px) {
-  .navbar {
+  .navbar,
+  .footer-container {
     margin-inline: 8%;
   }
 }
