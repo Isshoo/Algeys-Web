@@ -32,15 +32,14 @@ header {
   z-index: 9999;
   background-color: transparent;
   top: 0;
-
   border-radius: 0 0 10px 10px;
   transition: background-color 0.3s ease-in-out;
 }
+
 header::after {
   content: "";
   position: absolute;
   top: 0;
-
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -53,7 +52,6 @@ header::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   height: 10vh;
   margin-inline: auto;
   max-width: 1200px;
@@ -73,9 +71,11 @@ header::after {
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 }
+
 .nav-title a span {
   color: #ffd000;
 }
+
 .nav-title a span::before {
   content: "lgy";
   color: white;
@@ -83,6 +83,7 @@ header::after {
   transition: 0.3s ease-in-out;
   margin-right: 0.5rem;
 }
+
 .nav-title a span::after {
   content: "g";
   display: none;
@@ -94,6 +95,7 @@ header::after {
   display: inline-block;
   transition: 0.3s ease-in-out;
 }
+
 .nav-title a span:hover::after {
   display: inline-block;
   transition: 0.3s ease-in-out;
@@ -107,14 +109,11 @@ header::after {
 
 .nav-link {
   font-family: Poppins, sans-serif;
-
   text-decoration: none;
   color: white;
   font-weight: 300;
-
   border-radius: 30px;
   position: relative;
-
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 
@@ -143,7 +142,6 @@ header::after {
 .nav-toggle {
   display: none;
   cursor: pointer;
-
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 
@@ -210,9 +208,9 @@ main {
 
 .content-text {
   flex: 2.5;
-
   position: relative;
 }
+
 .content-text::before {
   content: "";
   display: block;
@@ -233,9 +231,7 @@ main {
 
 .content-text h2 {
   font-size: 1.75rem;
-
   font-weight: 600;
-
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
 
@@ -243,16 +239,15 @@ main {
   font-size: 3rem;
   font-weight: 700;
   margin-block-end: 1rem;
-
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
 }
+
 .content-text h1 span {
   color: #ffd000;
 }
 
 .content-text h3 {
   font-size: 1.25rem;
-
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 0.5);
   margin-block-end: 0.5rem;
 }
@@ -265,7 +260,6 @@ main {
   font-size: 1.25rem;
   font-weight: 300;
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
-
   margin-block-end: 1rem;
 }
 
@@ -281,9 +275,9 @@ main {
   transition: 0.3s ease-in-out;
   align-items: center;
   cursor: pointer;
-
   box-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 }
+
 .content-text .aboutBtn i {
   margin-inline-start: 0.5rem;
 }
@@ -312,6 +306,7 @@ main {
   border-radius: 10px;
   transition: transform 0.5s ease-in-out;
 }
+
 .content-img img:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease-in-out;
@@ -324,12 +319,12 @@ main {
   gap: 1rem;
   order: 2;
 }
+
 .sosmed a {
   font-size: 1.75rem;
   color: white;
   text-decoration: none;
   transition: 0.3s ease-in-out;
-
   text-shadow: 1px 1px 3px rgba(0, 0, 3, 1);
 }
 
@@ -353,7 +348,6 @@ main {
   width: 100%;
   row-gap: 3rem;
   padding-block: 5rem;
-
   background-image: url(../assets/bs5.jpg);
   background-size: cover;
   background-position: center;
@@ -424,6 +418,7 @@ main {
   max-width: 18rem;
   transition: transform 0.5s ease-in-out;
 }
+
 .profil-bio img:hover {
   transform: scale(1.03);
   transition: transform 0.5s ease-in-out;
@@ -456,7 +451,6 @@ main {
   text-align: left;
   font-size: 0.9rem;
   font-weight: 400;
-
   tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
@@ -468,6 +462,7 @@ main {
 .contact-btn {
   cursor: default;
 }
+
 .contact-btn span {
   display: inline-block;
   margin-block: 1rem;
@@ -498,7 +493,6 @@ main {
   row-gap: 3rem;
   width: 100%;
   padding-block: 5rem;
-
   background-image: url(../assets/bs3.jpg);
   background-size: cover;
   background-position: center;
@@ -556,7 +550,6 @@ main {
   flex-direction: column;
   border-radius: 20px;
   background-color: transparent;
-
   box-shadow: -2px 2px 10px 3px #2a2929;
   justify-content: center;
   align-items: center;
@@ -604,7 +597,6 @@ main {
   position: absolute;
   padding: 0.4rem 2rem;
   top: -20%;
-
   background-color: #ffd000;
   border-radius: 20px;
   z-index: 99;
@@ -631,7 +623,6 @@ main {
   row-gap: 3rem;
   width: 100%;
   padding-block: 5rem;
-
   background-image: url(../assets/bs5.jpg);
   background-size: cover;
   background-position: center;
@@ -777,7 +768,6 @@ main {
 .contact-info h3 {
   font-size: 2.5rem;
   border-bottom: 1px solid #ffd000;
-
   padding-block: 0.5rem;
 }
 
@@ -835,6 +825,7 @@ main {
 .menu-detail h5 {
   font-size: 1.1rem;
 }
+
 .menu-detail p {
   font-size: 0.9rem;
 }
@@ -926,7 +917,6 @@ main {
 /* footer */
 footer {
   width: 100%;
-
   background-color: #2a2929;
 }
 
@@ -964,18 +954,25 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  /* header */
   .navbar {
     margin-inline: 8%;
   }
+
   .nav-list ul {
     gap: 2rem;
   }
+
   .nav-title a {
     font-size: 1.4rem;
   }
+
   .nav-link {
     font-size: 0.9rem;
   }
+  /* header */
+
+  /* home */
 
   .content-text h2 {
     font-size: 1.25rem;
@@ -991,7 +988,6 @@ footer {
 
   .content-text p {
     font-size: 1rem;
-
     margin-block-end: 0.5rem;
   }
 
@@ -1007,13 +1003,20 @@ footer {
   .sosmed a {
     font-size: 1.5rem;
   }
+  /* home */
+
+  /* about */
 
   .biodata p {
     font-size: 0.9rem;
   }
+
   .tabel-bio {
     font-size: 0.8rem;
   }
+  /* about */
+
+  /* contact */
 
   .contact-info h3 {
     font-size: 2rem;
@@ -1045,17 +1048,21 @@ footer {
   .menu-detail h5 {
     font-size: 1rem;
   }
+
   .menu-detail p {
     font-size: 0.7rem;
   }
+
+  /* contact */
 }
 
 @media screen and (max-width: 768px) {
+  /* header */
+
   .nav-list {
     gap: 1rem;
     flex-direction: column;
     position: absolute;
-
     justify-content: center;
     align-items: center;
     top: -1000px;
@@ -1086,6 +1093,10 @@ footer {
   .nav-list.active {
     top: 4.3rem;
   }
+
+  /* header */
+
+  /* home */
 
   .content-text {
     margin-block-start: 2rem;
@@ -1124,6 +1135,10 @@ footer {
     max-height: 20rem;
   }
 
+  /* home */
+
+  /* about */
+
   .about-content {
     flex-direction: column;
     gap: 2rem;
@@ -1136,20 +1151,30 @@ footer {
   .biodata h3 {
     display: none;
   }
+
   .biodata p {
     font-size: 0.9rem;
     border-top: 1px solid #ffd000;
   }
+
   .tabel-bio {
     font-size: 0.8rem;
   }
 
+  /* about */
+
+  /* contact */
+
   .contact-content {
     flex-direction: column;
   }
+
+  /* contact */
 }
 
 @media screen and (max-width: 480px) {
+  /* home */
+
   #home {
     background-image: url(../assets/home-foto.jpg);
   }
@@ -1160,16 +1185,20 @@ footer {
     row-gap: 0.1rem;
   }
 
+  .content-img img {
+    display: none;
+  }
+
   .sosmed {
     padding-right: 0rem;
   }
 
+  /* home */
+
+  /* about */
+
   .about-content {
     padding: 2rem;
-  }
-
-  .content-img img {
-    display: none;
   }
 
   .profil-bio img {
@@ -1179,12 +1208,18 @@ footer {
   .biodata p {
     font-size: 0.9rem;
   }
+
   .tabel-bio {
     font-size: 0.8rem;
   }
+
   .contact-btn span {
     font-size: 0.9rem;
   }
+
+  /* about */
+
+  /* hobbies */
 
   .hobbies-item:hover {
     flex: 5;
@@ -1193,6 +1228,10 @@ footer {
   .hobbies-item h4 {
     font-size: 0.5rem;
   }
+
+  /* hobbies */
+
+  /* contact */
 
   .contact-menu {
     flex: 100%;
@@ -1209,6 +1248,8 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  /* contact */
 }
 
 /* responsive */
