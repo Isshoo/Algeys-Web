@@ -1165,6 +1165,10 @@ footer {
     padding-right: 0rem;
   }
 
+  .about-content {
+    padding: 2rem;
+  }
+
   .content-img img {
     display: none;
   }
