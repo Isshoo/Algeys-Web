@@ -895,12 +895,16 @@ main {
 }
 
 .submit-form {
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
   background-color: #ffffff6f;
   text-decoration: none;
   color: white;
   border-radius: 5px;
   border: transparent;
+  cursor: pointer;
+}
+.submit-form:hover {
+  background-color: #ffd000;
 }
 
 .message,
