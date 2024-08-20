@@ -753,6 +753,7 @@ main {
   text-align: center;
   padding-block: 1.5rem;
   max-width: 1200px;
+  margin-inline: auto;
 }
 
 .contact-content {
@@ -887,7 +888,7 @@ main {
   padding: 0.8rem;
   border-radius: 5px;
   border: 1px solid #ccc;
-  min-height: 18vh;
+  min-height: 10rem;
 }
 
 .form-group textarea::placeholder {
@@ -957,7 +958,8 @@ footer {
 
 @media screen and (max-width: 1440px) {
   .navbar,
-  .footer-container {
+  .footer-container,
+  .contact-title {
     margin-inline: 8%;
   }
 }
