@@ -1191,11 +1191,20 @@ footer {
     font-size: 0.5rem;
   }
 
+  .contact-menu {
+    flex: 100%;
+  }
+
   .email,
   .phone,
   .name,
   .subject {
     flex-basis: 100%;
+  }
+
+  .contact-info aside {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
