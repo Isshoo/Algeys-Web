@@ -770,39 +770,73 @@ main {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   flex: 1;
 }
 
-.contact-info h4 {
+.contact-info h3 {
+  font-size: 2.5rem;
+  border-bottom: 1px solid #ffd000;
+
+  padding-block: 0.5rem;
+}
+
+.contact-info > p {
+  font-size: 1rem;
+  text-align: justify;
+  text-indent: 2rem;
+  line-height: 1.25rem;
+}
+
+.contact-info aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+.contact-info aside h4 {
   font-weight: 600;
-  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.contact-info .sosmed {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info .sosmed a i {
+  font-size: 1.5rem;
 }
 
 .contact-detail {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   text-decoration: none;
   flex-wrap: wrap;
   border-bottom: 1px solid #2a2929;
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 
 .contact-menu {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   flex: 45%;
 }
 .contact-menu i {
   background-color: #ffd000;
+  border-radius: 10px;
   padding: 0.5rem;
-  aspect-ratio: 1/1;
+  font-size: 2rem;
 }
 
+.menu-detail h5 {
+  font-size: 1.1rem;
+}
 .menu-detail p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .form-contact {
@@ -897,30 +931,20 @@ footer {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  gap: 3rem;
   border-radius: 20px;
   margin-inline: auto;
-  transition: background-color 0.3s ease-in-out;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
 }
 
 .footer-container h4 {
   font-weight: 600;
   font-size: 1rem;
+  color: #b6b6b6;
 }
 
 .footer-container a {
-  color: #ffffff;
+  color: #b6b6b6;
   text-decoration: none;
-}
-
-.footer-container .sosmed {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-container .sosmed a i {
-  font-size: 1.2rem;
 }
 
 /* footer */
@@ -984,6 +1008,40 @@ footer {
   }
   .tabel-bio {
     font-size: 0.8rem;
+  }
+
+  .contact-info h3 {
+    font-size: 2rem;
+  }
+
+  .contact-info > p {
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.25rem;
+  }
+
+  .contact-info aside h4 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .contact-info .sosmed a i {
+    font-size: 1.25rem;
+  }
+
+  .contact-menu i {
+    background-color: #ffd000;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .menu-detail h5 {
+    font-size: 1rem;
+  }
+  .menu-detail p {
+    font-size: 0.7rem;
   }
 }
 
@@ -1079,6 +1137,10 @@ footer {
   }
   .tabel-bio {
     font-size: 0.8rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
   }
 }
 
