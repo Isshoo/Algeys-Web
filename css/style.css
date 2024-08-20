@@ -13,6 +13,7 @@ body {
 }
 
 /* tamplate */
+
 .container {
   max-width: 1200px;
   margin-inline: 8%;
@@ -915,6 +916,7 @@ main {
 /* main */
 
 /* footer */
+
 footer {
   width: 100%;
   background-color: #2a2929;
@@ -955,6 +957,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   /* header */
+
   .navbar {
     margin-inline: 8%;
   }
@@ -970,6 +973,7 @@ footer {
   .nav-link {
     font-size: 0.9rem;
   }
+
   /* header */
 
   /* home */
@@ -1003,6 +1007,7 @@ footer {
   .sosmed a {
     font-size: 1.5rem;
   }
+
   /* home */
 
   /* about */
@@ -1014,6 +1019,7 @@ footer {
   .tabel-bio {
     font-size: 0.8rem;
   }
+
   /* about */
 
   /* contact */
